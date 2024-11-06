@@ -17,6 +17,6 @@ Rails.application.routes.draw do
   #   resources :reviews, only: [:new, :create]
   # end
   resources :restaurants, only: %i[index new show create] do # ou ==> [:index, :new, :show, :crete]
-    resources :reviews, only: %i[new create] # ou ==> [:new, :create]
+    resources :reviews, only: %i[create] # ou ==> [:new, :create]
   end
 end
